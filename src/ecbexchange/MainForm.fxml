@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="174.0" prefWidth="320" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ecbexchange.MainFormController">
+    <children>
+      <TextField id="valueATextField" fx:id="valueATextField" layoutX="33.0" layoutY="31.0" onAction="#handleValueATextFiledAction" />
+      <TextField id="valueBTextField" fx:id="valueBTextField" layoutX="33.0" layoutY="83.0" onAction="#handleValueBTextFiledAction" />
+      <ComboBox id="currencyAComboBox" fx:id="currencyAComboBox" layoutX="197.0" layoutY="31.0" prefHeight="25.0" prefWidth="86.0" />
+      <ComboBox id="currencyBComboBox" fx:id="currencyBComboBox" layoutX="197.0" layoutY="83.0" prefHeight="25.0" prefWidth="86.0" />
+      <CheckBox id="autoUpdateCheckBox" fx:id="autoUpdateCheckBox" layoutX="33.0" layoutY="123.0" mnemonicParsing="false" selected="true" text="Legfrissebb árfolyam használata" />
+      <HBox alignment="BOTTOM_LEFT" layoutX="3.0" layoutY="143.0" prefHeight="25.0" prefWidth="311.0">
+         <children>
+              <Label id="msgLabel" fx:id="msgLabel" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="236.0" />
+         </children></HBox>
+      <Label layoutX="33.0" layoutY="11.0" text="Érték (A):" />
+      <Label layoutX="33.0" layoutY="63.0" text="Érték (B):" />
+      <Label layoutX="197.0" layoutY="11.0" text="Pénznem (A)" />
+      <Label layoutX="197.0" layoutY="63.0" text="Pénznem (B)" />
+    </children>
+</AnchorPane>
